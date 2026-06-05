@@ -1,0 +1,706 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(24, 24, 24, 0.989);
+    font-family:"Poppins", sans-serif;
+}
+ul{
+    list-style: none;
+}
+main{
+  flex: 1;
+  padding-top: 100px;
+}
+
+.cursor{
+    cursor: pointer;
+}
+/* ჰედერი */
+.header{
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(24, 22, 22, 0.962);
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  flex-wrap: wrap; 
+  padding: 10px 15px;
+}
+
+.main_logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.mainFoto{
+    width: 70px;
+    height: auto;
+}
+.page_name{
+    color: rgb(184, 122, 41);
+    font-size: 22px;
+}
+
+ h1{
+    font-size: 28px;
+  }
+
+h2{
+  font-size: 26px;
+}
+  a, li{
+    font-size: 20px;
+  }
+
+  p, button{
+    font-size: 18px;
+  }
+  p.choose_text,
+  p.price {
+    font-size: 14px;
+  }
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.burger_menu{
+    display: none;
+}
+.navigation{
+    gap: 10px;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.nav_items{
+    color: rgb(197, 173, 140);
+}
+.nav_items:hover{
+    color: #c89b63;
+}
+.search{
+  margin-top: 30px;
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.search_input{
+  width: 200px;
+  padding: 5px 10px;
+  color: #fff; 
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+
+}
+  
+.search_btn{
+    padding: 5px 10px;
+    background-color: #a15f0dbb;
+    border: none;
+    color: white;
+    border-radius: 30px;
+}
+
+.search_btn:hover{
+    background-color: #dbb389b5;
+}
+.search_icon{
+    width: 20px;
+}
+
+body.open{
+    background-color: #e1c7a8;
+}
+.sun{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.sun_icon{
+    width: 35px;
+    height: 35px;
+}
+
+
+/* მეინი */
+.weath{
+    color: #faf8f7;
+    background: #bc843f;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 150px;
+}
+
+.loader-box {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 4px solid lightgray;
+  border-top: 4px solid rgb(103, 71, 13);
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.hero_section {
+    position: relative;
+}
+.hero_foto {
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: block;
+}
+.hero_info{
+    background-color: rgba(172, 145, 92, 0.482);
+    padding: 10px 20px;
+    border-radius: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.hero_title{
+
+    color: rgb(242, 241, 237);
+    margin-bottom: 50px;
+}
+.hero_text{
+ color: aliceblue;
+ margin-bottom: 30px;
+}
+.read_more{
+    padding: 10px 20px;
+    background-color: #6d563993;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    width: 180px;
+}
+.read_more:hover{
+  background-color: #b69e80;
+}
+
+.second_section{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.cake_foto{
+    width: 40%;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 200px;
+}
+.second_section_texts{
+    display: flex;
+    flex-direction: column;
+}
+.second_section_text{
+    margin-bottom: 30px;
+    color: rgb(168, 164, 146);
+}
+.cruassant_icon{
+   display: flex;
+   gap: 50px;
+   margin-bottom: 50px;
+}
+.dessert_icon{
+    background-color: #b69e80;
+    border-radius: 20px;
+    padding: 5px;
+    width: 100px;
+    height: auto;
+}
+.second_section_li{
+    color: rgb(210, 213, 182);
+    margin-bottom: 10px;
+}
+/* სპეციალური შეთავაზებები */
+.third_section{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+.special_offer_title{
+    color: #b69e80;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.special_offer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.lactoseFree_foto{
+    width: 50px;
+    height: auto;
+    background-color: rgb(229, 231, 202);
+    border-radius: 10px;
+    padding: 5px;
+}
+.diabeticCake_foto{
+    width: 50px;
+    height: auto;
+    background-color: rgb(195, 207, 203);
+    border-radius: 20px;
+    padding: 8px;
+}
+.special_offer_text{
+    color: lavender;
+    width: 250px;
+    text-align: center;
+}
+/* ფუტერი */
+.footer{
+    background-color: rgba(26, 3, 3, 0.908);
+}
+.footer_text{
+    color: lemonchiffon;
+    text-align: center;
+    padding: 20px;
+}
+/* ასორტიმენტი */
+
+.cart_box {
+  color: #f9f8f7;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+#cart li{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 5px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  width: 150px;
+  border-radius: 20px;
+}
+
+
+#cart li button {
+  color: red;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+   
+}
+
+#deleteAll {
+  display: block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background: #b51304;
+  color: #eccfcf;
+  cursor: pointer;
+}
+
+#deleteAll:hover,
+#cart li:hover {
+  transform: scale(1.05);
+}
+.choice{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.item{
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+.choose_foto{
+  width: 50%;
+  height: 200px;   
+  object-fit: cover;
+    
+}
+.choose_text{
+  position: absolute;
+  top: 25px;
+  left: 27%;
+  color: #f9f8f7;
+  background-color: #de8b2d5a;
+  padding: 5px;
+  border-radius: 5px;
+    
+}
+.price{
+  position: absolute;
+  top: 25px;
+  right: 27%; 
+  color: #f9f8f7;
+  background-color: #de8b2d5a;
+  padding: 5px;
+  border-radius: 5px;
+}
+.choose{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 5px;
+    background-color: #ed8e21a1;
+    color: #f8f6f6de;
+    padding: 5px;
+}
+/* FAQ */
+.main_questions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.questions{
+    width: 70%;
+    text-align: center; 
+}
+.asked_questions{
+    background-color: #480d0dfa;
+    border-bottom: 5px solid rgb(221, 110, 110);
+    border-radius: 20px;
+    color: #b69e80;
+    padding: 10px;
+    margin-bottom: 50px;   
+
+}
+.accordion_section{
+   border-bottom: 5px solid rgb(55, 1, 1);
+   
+}
+.accordion_titles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(69, 53, 41);
+    color: rgb(238, 212, 207);
+    padding: 20px;
+}
+
+.accordion_texts{
+    font-size: 22px;
+    height: 0;
+    overflow: hidden;
+    margin-top: 10px;
+    color: rgb(190, 170, 168);
+}
+
+
+.accordion_section.opened .accordion_texts{
+    height: 100px;
+}
+
+.plus {
+    float:right;
+    color: rgb(197, 78, 78);
+    cursor: pointer;
+}
+/* კონტაქტი */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 120px 20px 50px;
+  
+}
+
+.contact__title {
+  color: #c89b63;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 20px;
+}
+
+
+.input {
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;  
+}
+
+.btn {
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: #c89b63;
+  color: #1b1b1b;
+}
+
+.btn:hover {
+  background: #e0b77a;
+}
+
+.mailto__me,
+.callto__me {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #df5555;
+}
+
+
+  @media (max-width:768px){
+  main{
+    padding-top: 80px;
+  }
+
+
+  .header {
+    padding: 10px 15px;
+  }
+  
+  .main_logo{
+    gap: 10px;
+}
+
+.mainFoto{
+    width: 60px;
+    height: auto;
+}
+.page_name{
+    font-size: 18px;
+}
+ h1{
+    font-size: 22px;
+  }
+
+h2{
+  font-size: 20px;
+}
+  p, a, li, button{
+    font-size: 16px;
+  }
+
+  .search{
+    max-width: 150px;
+    justify-content: center;
+  }
+ .search_input{
+  width: 120px;
+ }
+  .navigation{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(24, 22, 22, 0.98);
+    flex-direction: column;
+    display: none;
+    padding: 15px;
+  }
+
+  .navigation.open{
+    display: flex;
+  }
+
+  .nav{
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .burger_menu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  cursor: pointer;
+  }
+
+  .burger_icon{
+  width: 30px;
+  height: 30px;
+
+}
+
+.weath{
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 120px;
+}
+  .choice{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  .second_section{
+    flex-direction: column;
+    text-align: center;
+  }
+  .third_section{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .cake_foto{
+    width: 60%;
+  }
+
+ .accordion_titles{
+    padding: 15px;
+  }
+.contact {
+    flex-direction: column;
+    align-items: center;
+  }
+.form {
+  width:100%;
+  max-width: 500px;
+  padding: 20px;
+  
+}
+.map {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+  }
+
+  }
+@media (max-width:480px){
+
+  .header {
+    height: 60px;
+  }
+
+  main {
+    padding-top: 60px;
+  }
+
+  .navigation{
+    display: none;
+  }
+  .main_logo{
+    gap: 5px;
+}
+
+.mainFoto{
+    width: 50px;
+    height: auto;
+}
+
+.page_name {
+  display: none;
+}
+
+  h1{
+    font-size: 16px;
+  }
+
+h2{
+  font-size: 15px;
+}
+  p, a, li, button{
+    font-size: 14px;
+  }
+
+  .navigation.open{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+.weath{
+    padding: 5px;
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 100px;
+    font-size: 14px;
+}
+  .choice{
+    grid-template-columns: 1fr;
+  }
+
+ .search_input{
+  width: 80px;
+ }
+
+.search_icon{
+   width: 15px;
+
+}
+.sun_icon {
+  width: 25px;
+  height: 25px;
+}
+.sun {
+  width: 15px;
+  height: 15px;
+}
+ .hero_info {
+    width: 80%;
+  }
+
+
+.third_section{
+    gap: 30px;
+}
+
+.form {
+  width:80%;
+  gap: 5px;
+  padding: 10px;
+}
+
+}
