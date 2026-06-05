@@ -503,6 +503,8 @@ body.open{
 
 
   @media (max-width:768px){
+
+  
   main{
     padding-top: 80px;
   }
@@ -524,16 +526,18 @@ body.open{
 .page_name{
     font-size: 18px;
 }
- h1{
-    font-size: 22px;
-  }
 
 h2{
   font-size: 20px;
 }
-  p, a, li, button{
+
+  li{
     font-size: 16px;
   }
+  p, a, button{
+    font-size: 14px;
+  }
+  
 
   .search{
     max-width: 150px;
@@ -581,11 +585,21 @@ h2{
     margin-left: 15px;
     width: 120px;
 }
+
   .choice{
     grid-template-columns: repeat(2, 1fr);
   }
 
-
+  .hero_title{
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+.hero_text{
+ margin-bottom: 10px;
+}
+.read_more{
+    padding: 5px 10px;
+}
   .second_section{
     flex-direction: column;
     text-align: center;
